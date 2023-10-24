@@ -1,0 +1,37 @@
+app:
+  kelvin:
+    language:
+      python:
+        entry_point: kelvin_python_sdk
+        requirements: requirements.txt
+      type: python
+    outputs:
+      - data_type: number
+        name: water-pressure
+      - data_type: number
+        name: casing-pressure
+      - data_type: number
+        name: torque_new
+      - data_type: number
+        name: water-flow
+      - data_type: number
+        name: gas-volume-flow
+      - data_type: number
+        name: pump-speed
+      - data_type: number
+        name: downhole-pressure
+      - data_type: number
+        name: water-level
+      - data_type: number
+        name: torque-op
+      - data_type: number
+        name: gas-line-pressure
+  type: kelvin
+info:
+  description: kelvin-csv-data-uploader
+  name: kelvin-csv-data-uploader
+  title: kelvin-csv-data-uploader
+  version: 1.0.0
+spec_version: 4.11.0
+system:
+  environment_vars: []
